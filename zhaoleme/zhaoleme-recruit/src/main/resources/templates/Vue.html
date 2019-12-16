@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/layui/css/layui.css">
+    <script src="/css/layui/layui.js"></script>
+</head>
+<style>
+    #colorbulv{
+        color: #00FFFF;
+        font-size: 30px;
+    }
+    #ss{
+        width: 700px;
+        height: 130px;
+        border: #7e9fb5 solid 1px;
+        background-color: #7e9fb5;
+        position:absolute;
+        top:80px;
+        left: 320px;
+    }
+    body{
+        background-color: #f5f5f5;
+    }
+    #sss{
+        width: 200px;
+        height: 130px;
+        border: #ffffff solid 1px;
+        background-color: #ffffff;
+        position:absolute;
+        top:80px;
+        left:1000px;
+    }
+    #cs{
+        position:absolute;
+        top: 20px;
+        left: 500px;
+    }
+    #inp{
+        position:absolute;
+        top: 20px;
+    }
+    #cssc{
+        position:absolute;
+        top: 20px;
+        left: 600px;
+    }
+    #reimin{
+        position:absolute;
+        top: 80px;
+        left: 10px;
+        color: #ffffff;
+    }
+    .qcwy{
+        color: #ffffff;
+    }
+    .ye{
+        color: #FF5722;
+    }
+    span:hover{
+        color: #FF5722;
+    }
+    #tu{
+        position:absolute;
+        left: 60px;
+    }
+    #szie{
+        position:absolute;
+        top:60px;
+        left: 70px;
+    }
+    #anne{
+        position:absolute;
+        top:85px;
+        left: 30px;
+    }
+    #csqz{
+        position:absolute;
+        top:230px;
+        left: 320px;
+        width: 880px;
+        height: 50px;
+        background-color: #ffffff;
+    }
+    #csqz{
+        color:#0C0C0C;
+    }
+    #csqz :hover{
+        color: #FF5722;
+    }
+    #juzh{
+        position:absolute;
+        top:15px;
+        left: 10px;
+    }
+    #inp{
+        position:absolute;
+        left: 10px;
+    }
+</style>
+<!--<link rel="stylesheet" href="../static/css/navigation.css">-->
+<body>
+        <div id="navigation">
+            <ul class="layui-nav" lay-filter="" >
+                <li class="layui-nav-item" style="left: 300px"><h3 id="colorbulv">看了么</h3></li>
+                <li class="layui-nav-item layui-this"  style="left: 800px"><a href="">首页</a></li>
+                <li class="layui-nav-item" style="left: 810px"><a href="">职位搜索</a></li>
+                <li class="layui-nav-item" style="left: 820px"><a href="">登录</a></li>
+                <li class="layui-nav-item" style="left: 810px">|</li>
+                <li class="layui-nav-item" style="left: 800px"><a href="">注册</a></li>
+            </ul>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td id="ss">
+                        <form class="layui-form" action="">
+                                  <span id="inp">  <input name="title" class="layui-input" type="text" placeholder="请输入关键字" autocomplete="off" lay-verify="title" style="width: 500px;"></span>
+                                     <span id="cs"> <button class="layui-btn" type="button" lay-filter="demo1" lay-submit="">当前城市</button></span>
+                            <span id="cssc"> <button class="layui-btn" type="button" lay-filter="demo1" lay-submit="">搜索</button></span>
+                            <p id="reimin">热门推荐:<a href=""> <span class="ye">看了么招聘</span>&nbsp;&nbsp;&nbsp;</a><a href="">  <span class="qcwy">销售</span></a>
+                                &nbsp;&nbsp;&nbsp;<a href="">   <span class="qcwy">java</span> </a>
+                                &nbsp;&nbsp;&nbsp; <a href="">   <span class="qcwy">人事</span></a>&nbsp;&nbsp;&nbsp;<a href=""> <span class="qcwy">Ul</span></a>&nbsp;&nbsp;&nbsp;<a href=""> <span class="qcwy">行政</span></a>
+                                &nbsp;&nbsp;&nbsp;<a href="">     <span class="qcwy">web前端</span></a>&nbsp;&nbsp;&nbsp;<a href=""> <span class="qcwy">房地产</span></a>
+                            </p>
+                        </form>
+                    </td>
+                    <td id="sss">
+                        <p id="tu"><img src="../css/imgage/abc.png" height="60" width="68"/>
+                        <p id="szie">HI!您好</p>
+                        <p id="anne"><a href=""><button class="layui-btn" type="button" lay-filter="demo1" lay-submit="">注册</button></a>&nbsp;&nbsp;<a href=""><button class="layui-btn" type="button" lay-filter="demo1" lay-submit="">登录</button></a> </p>
+                        </p>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+        <div id="csqz">
+           <p id="juzh"> <span class="ye">城市求职</span>
+               &nbsp;&nbsp;&nbsp;<a href="" >北京</a>
+               &nbsp;&nbsp;&nbsp;<a href=""> 上海</a>
+               &nbsp;&nbsp;&nbsp;<a href="">广州</a>
+               &nbsp;&nbsp;&nbsp;<a href=""> 深圳</a>
+               &nbsp;&nbsp;&nbsp;<a href=""> 武汉</a>
+               &nbsp;&nbsp;&nbsp;<a href=""> 西安</a>
+               &nbsp;&nbsp;&nbsp;<a href=""> 杭州</a>
+               &nbsp;&nbsp;&nbsp;<a href=""> 南京</a>
+               &nbsp;&nbsp;&nbsp;<a href=""> 成都</a>
+               &nbsp;&nbsp;&nbsp;<a href="">长沙</a>
+               &nbsp;&nbsp;&nbsp;<a href=""> 天津</a>
+               &nbsp;&nbsp;&nbsp;<a href=""> 青岛</a>
+
+
+
+           </p>
+        </div>
+
+
+        <div id="app">
+        </div>
+
+
+
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script>
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+
+
+        var app=new Vue({
+            el:"#app",
+            data:{
+                name:"辉哥"
+            }
+        })
+
+</script>
+</html>

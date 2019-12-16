@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml"
+      xmlns:v-model="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<body>
+    <div id="app">
+        <input type="text" v-model="y">
+            <select v-model="jjcc">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+
+        <input type="text" v-model="e">
+        <input type="button" value="=" @click="calc">
+      结果  <input type="text" v-model="jieguo">
+    </div>
+
+</body>
+<script>
+        var vm=new Vue({
+            el:"#app",
+            data:{
+                y:0,
+                e:0,
+                jieguo:0,
+                jjcc:"-"
+            },methods:{
+                calc() {
+                 /* switch (this.jjcc) {
+                      case "+":
+                          this.jieguo=parseInt(this.y)+parseInt(this.e);
+                          break;
+                      case "-":
+                          this.jieguo=this.y-this.e;
+                          break;
+                      case "*":
+                          this.jieguo=this.y*this.e;
+                          break;
+                      case "/":
+                          this.jieguo=this.y/this.e;
+                          break;
+                  }*/
+                 var ca="parseInt(this.y)"+this.jjcc+"parseInt(this.e)"
+                    this.jieguo=eval(ca);
+                }
+            }
+        })
+</script>
+</html>

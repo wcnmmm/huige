@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<body>
+    <div id="app">
+        <p v-cloak>{{msg}}</p>
+        <input type="button" v-on:click="show" value="按钮">
+    </div>
+
+</body>
+<script>
+        var vm=new Vue({
+            el:"#app",
+            data:{msg:"Vue"},
+            methods:{
+                show:function () {
+                    alert("李蛋蛋")
+                }
+            }
+        })
+</script>
+</html>
